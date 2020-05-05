@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Covid-19 Stats</title>
+    <link rel="stylesheet" href="/css/styles.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+ 
+        <p>Use this site to get stats for a country !
+            Enter date and iso country code. ex: ITA, CAN 
+            <br>For a complete list of codes see Help.
+        </p>
+  
+        <form>
+            
+<div class="flatpickr">
+                <input id="flatpickr" placeholder="select date" data-input>
+</div>
+
+            <input placeholder="location code" id="iso">
+            <button>Search</button>
+
+        </form>
+        <p id="message-1"></p>
+        <div>
+            <table id="message-2">
+           </table>
+        </div>
+
+
+    {{>footer}}
+
+
+      <script src="/js/app.js"></script>
+
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 body {
     color: #333333;
     font-family: arial;
-    /* max-width: 1200px; */
+  
     margin: 0 auto;
     padding: 0 16px;
 
@@ -70,11 +70,10 @@ table, th, td {
     width:auto;
     float:left;
 
-    /* size: 100%; */
   
   }
 
-  .gfg { 
+ .gfg { 
     width:auto; 
     text-align:center; 
     padding:20px; 
@@ -84,3 +83,41 @@ img {
     height: 100%; 
     object-fit: contain; 
 } 
+
+.img-me {
+    max-height: 500px;
+  }
+  img.m1 {
+    position: absolute;
+    animation: FadeOut 2s infinite alternate ease-in-out;
+
+    max-height: 200px;
+  }
+  img.m2 {
+    position: absolute;
+    opacity: 0;
+    animation: FadeIn 1s infinite alternate ease-in-out;
+    max-height: 200px;
+  }
+  @keyframes FadeOut {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+    }
+    0% {
+      opacity: 1;
+    }
+  }

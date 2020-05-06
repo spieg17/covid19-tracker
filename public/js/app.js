@@ -67,7 +67,7 @@ weatherForm.addEventListener('submit', (e) => {
                     break
 
                     case "province" :
-                    xx += '<td>' + key + '<br>' + value + '</td></tr>'
+                    xx += '<td>' + key + '<br>' + value + '</td></tr><tr><td>-</td></tr>'
                      break 
                 }
                   return value
